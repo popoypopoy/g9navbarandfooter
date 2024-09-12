@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>Dropdown Fix</title>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="watch.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <!-- Menu icon -->
+        <div class="menu">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <ul class="dropdown">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Repair & Polishing Service</a></li>
+                <li><a href="#">Buy. Sell. Trade</a></li>
+                <li><a href="#">Shipping Information</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <!-- Logo and navigation links -->
+        <div class="logo">
+            <a href="https://www.facebook.com">Sovereign Timepiece</a>
+            <ul>
+                <li><a href="https://www.facebook.com">Rolex</a></li>
+                <li><a href="https://www.facebook.com">Cartier</a></li>
+                <li><a href="https://www.facebook.com">Audemars Piguet</a></li>
+                <li><a href="https://www.facebook.com">Patek Philippe</a></li>
+                <li><a href="https://www.facebook.com">Richard Mille</a></li>
+            </ul>
+        </div>
+        
+        <!-- Profile items -->
+        <div class="profileitem">
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-solid fa-heart"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                    <div class="col" id="company">
+                        <h2>Sovereign Timepiece</h2>
+                        <p>
+                             Experience the world of luxury first hand at Sovereign Timepiece. We offer our clients a distinguished and wide range of Rolex, Audemars Piguet, Patek Philippe, and Cartier watches. We insist on first-class personal customer service, and offer overnight shipping domestically and internationally. When you shop with us, you make a timeless purchase.
+                        </p>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+                        </div>
+                      </div>
+    
+    
+                    <div class="col" id="services">
+                        <h3>Menu</h3>
+                        <div class="links">
+                            <a href="#">Home</a>
+                            <a href="#">Mission</a>
+                            <a href="#">Repair & Polishing</a>
+                            <a href="#">Buy. Sell. Trade</a>
+                            <a href="#">Shipping Information</a>
+                            <a href="#">Return Policy</a>
+                        </div>
+                    </div>
+    
+                    <div class="col" id="useful-links">
+                        <h3>Watche Collection</h3>
+                        <div class="links">
+                            <a href="#">Rolex</a>
+                            <a href="#">Cartier</a>
+                            <a href="#">Audemars Piguet</a>
+                            <a href="#">Patek Philippe</a>
+                            <a href="#">Richard Millie</a>
+                        </div>
+                    </div>
+    
+                    <div class="col" id="contact">
+                        <h3>Contact</h3>
+                        <div class="contact-details">
+                            <i class="fa-solid fa-location-dot"></i>          
+                            <p>valenzuela <br> phphp</p>
+                        </div>
+                        <div class="contact-details">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>12345679</p>
+                        </div>
+                      </div>
+                </div>
+    
+                <div class="row">
+                    <div class="form">
+                        <form action="">
+                            <input type="text" placeholder="Email here...">
+                            <button><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
+    
+    <script>
+            // JavaScript to toggle the dropdown menu
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            const dropdown = document.querySelector('.dropdown');
+            dropdown.classList.toggle('show');
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
