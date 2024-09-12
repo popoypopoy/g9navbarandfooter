@@ -1,0 +1,323 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Navbar container */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    height: 100px;
+    border-bottom: 1px solid #000000;
+}
+
+/* Menu icon on the left */
+.menu {
+    position: relative;
+    padding-left: 5%;
+}
+
+.menu i {
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+/* Dropdown Menu Styling */
+.menu .dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #000;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+}
+
+.menu .dropdown li {
+    display: block;
+}
+
+.menu .dropdown li a {
+    display: block;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    transition: color 0.3s ease;
+}
+
+.menu .dropdown li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #ff0000;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.menu .dropdown li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.menu .dropdown li a:hover {
+    color: #000000;
+}
+
+/* Dropdown visible state */
+.menu .dropdown.show {
+    display: block; /* Display dropdown when 'show' class is toggled */
+}
+
+
+
+/* Center the logo */
+.logo {
+    flex: 1;
+    text-align: center;
+    padding-left: 28%;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding-right: 10%;
+}
+
+.logo ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo li {
+    font-size: 14px;
+    color: #000000;
+    margin-left: 20px;
+    white-space: nowrap;
+    padding: 10px 15px;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo li:first-child {
+    margin-left: 0;
+}
+
+.logo li:hover {
+    transform: scale(1.05);
+    color: #ff0000;
+}
+
+.logo li a {
+    color: #000000;
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.logo li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #ff0000;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.logo li a:hover {
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Profile items on the right */
+.profileitem {
+    flex: 1;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.profileitem a {
+    margin-left: 15px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+}
+
+.profileitem a:hover {
+    color: red;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem 1rem;
+    border-top: 0.5px solid rgb(0, 0, 0);
+}
+
+/* Specific class for footer container */
+.footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer row for flexible layout */
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Footer column for individual sections */
+.footer-col {
+    min-width: 250px;
+    flex: 1;
+    margin-bottom: 20px;
+    padding: 0 1rem;
+}
+
+.footer-col h2, .footer-col h3 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.footer-col p {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Social media icons */
+.footer-col .social a {
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+}
+
+.footer-col .social a:hover {
+    transform: scale(1.5);
+    filter: grayscale(25%);
+}
+
+/* Footer links */
+.footer-col .links a {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.footer-col .links a:hover {
+    color: rgb(255, 0, 0);
+    transform: translateX(-5px);
+}
+
+/* Contact details */
+.footer-col .contact-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-col .contact-details i {
+    margin-right: 10px;
+    color: #000;
+}
+
+/* Footer form (Newsletter) */
+.footer-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-form form {
+    display: flex;
+}
+
+.footer-form input {
+    padding: 10px;
+    border: 1px solid #000;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-form button {
+    padding: 10px;
+    border: 1px solid #000;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
